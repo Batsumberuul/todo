@@ -1,0 +1,225 @@
+.card_parents_container {
+  width: 100%;
+  height: 832px;
+  background-color: #1a1a1a;
+  position: absolute;
+}
+
+.button_addtask {
+  display: flex;
+  justify-content: end;
+  padding: 20px 20px 20px 0px;
+}
+#addTask {
+  width: 10%;
+  height: 44px;
+
+  background-color: #00a300;
+  border-radius: 4px;
+  border: none;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 600;
+}
+.card_container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
+  padding: 0px 20px 0px 20px;
+}
+.boarder {
+  border: 1px solid #99999952;
+  border-radius: 10px;
+  width: 25%;
+  height: 672px;
+  background-color: #101010;
+  display: flex;
+  flex-direction: column;
+}
+.boarder_tittle_container {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  height: 42px;
+  padding: 20px;
+}
+.boarder_tittle {
+  display: flex;
+  gap: 10px;
+
+  align-items: center;
+}
+.boarder_tittle_text {
+  font-size: 18px;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0;
+}
+.itemid {
+  padding-bottom: 10px;
+}
+
+.entertask_background {
+  width: 100%;
+  height: 832px;
+  background-color: rgba(26, 26, 26, 0.5);
+  position: relative;
+  display: none;
+}
+#edittask_background {
+  width: 100%;
+  height: 832px;
+  background-color: rgba(26, 26, 26, 0.5);
+  position: relative;
+  display: none;
+}
+.entertask_container {
+  width: 370px;
+  height: 376px;
+  background-color: #1a1a1af6;
+
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #999999;
+}
+
+.entertask {
+  font-size: 24px;
+  font-weight: 700;
+  color: #ffffff;
+  padding: 50px 40px 0px 40px;
+}
+.button_parents_container {
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+  padding: 0px 40px 20px 40px;
+}
+.button_container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+#entertask_button {
+  width: 283px;
+  height: 40px;
+  border: 1px solid #1a1a1af6;
+  background-color: #1a1a1af6;
+  border-radius: 4px;
+  border-color: #999999;
+  font-size: 16px;
+  font-weight: 400;
+  color: #999999;
+  text-align: start;
+  margin: 0;
+}
+#edittask_input {
+  width: 283px;
+  height: 40px;
+  border: 1px solid #1a1a1af6;
+  background-color: #1a1a1af6;
+  border-radius: 4px;
+  border-color: #999999;
+  font-size: 16px;
+  font-weight: 400;
+  color: #999999;
+  text-align: start;
+  margin: 0;
+}
+#StatusSelect {
+  width: 290px;
+  height: 43px;
+  border: 1px solid #1a1a1af6;
+  background-color: #1a1a1af6;
+  border-radius: 4px;
+  border-color: #999999;
+  font-size: 16px;
+  font-weight: 400;
+  color: #999999;
+  text-align: start;
+}
+
+#editStatusSelect {
+  width: 290px;
+  height: 43px;
+  border: 1px solid #1a1a1af6;
+  background-color: #1a1a1af6;
+  border-radius: 4px;
+  border-color: #999999;
+  font-size: 16px;
+  font-weight: 400;
+  color: #999999;
+  text-align: start;
+}
+
+#input_submit {
+  width: 290px;
+  height: 43px;
+  border: 1px solid #00a300;
+  background-color: #00a300;
+  border-radius: 4px;
+  border: none;
+
+  font-size: 16px;
+  font-weight: 600;
+  color: #ffffff;
+  text-align: center;
+}
+
+#edit_input_submit {
+  width: 290px;
+  height: 43px;
+  border: 1px solid #00a300;
+  background-color: #00a300;
+  border-radius: 4px;
+  border: none;
+
+  font-size: 16px;
+  font-weight: 600;
+  color: #ffffff;
+  text-align: center;
+}
+.tasks {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #1a1a1a;
+
+  border-radius: 8px;
+  height: 54px;
+  width: 90%;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+#addtask_list {
+  display: flex;
+  flex-direction: column;
+}
+.tasks-text {
+  margin: 0px;
+  color: #d9d9d9;
+  font-size: 12px;
+  font-weight: 400;
+  text-align: start;
+  width: 60%;
+}
+
+.edit_icon {
+  width: 16px;
+  height: 16px;
+  color: #ffffff;
+}
+.delete_icon {
+  width: 16px;
+  height: 16px;
+  color: rgba(255, 0, 0, 0.375);
+}
+.checkbox {
+  width: 12px;
+  height: 12px;
+  border-radius: 100px;
+  border: 1px solid #ffffff;
+  background-color: #1a1a1a;
+  margin: 0;
+}

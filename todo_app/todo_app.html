@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./todo_app.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="card_parents_container">
+      <div class="button_addtask">
+        <button id="addTask">Add Task</button>
+        <!-- <button id="reset">Reset</button>
+        <button id="reset_tasks">Reset Tasks</button> -->
+      </div>
+
+      <div class="card_container">
+        <div class="boarder todo">
+          <div class="boarder_tittle_container">
+            <div class="boarder_tittle">
+              <i
+                class="fa-regular fa-circle-check"
+                style="
+                  color: #d9d9d9;
+                  background-color: #d9d9d9;
+                  border-radius: 100%;
+                "
+              ></i>
+
+              <p class="boarder_tittle_text">To do</p>
+            </div>
+          </div>
+
+          <div class="addtask_todo" id="1"></div>
+        </div>
+
+        <div class="boarder">
+          <div class="boarder_tittle_container">
+            <div class="boarder_tittle">
+              <i
+                class="fa-regular fa-circle-check"
+                style="
+                  color: #a3a300;
+                  background-color: #a3a300;
+                  border-radius: 100%;
+                "
+              ></i>
+
+              <p class="boarder_tittle_text">In progress</p>
+            </div>
+          </div>
+
+          <div class="addtask_inprogress" id="2"></div>
+        </div>
+        <div class="boarder">
+          <div class="boarder_tittle_container">
+            <div class="boarder_tittle">
+              <i
+                class="fa-regular fa-circle-check"
+                style="
+                  color: #00a300;
+                  background-color: #00a300;
+                  border-radius: 100%;
+                "
+              ></i>
+
+              <p class="boarder_tittle_text">Done</p>
+            </div>
+          </div>
+
+          <div class="addtask_done" id="3"></div>
+        </div>
+        <div class="boarder">
+          <div class="boarder_tittle_container">
+            <div class="boarder_tittle">
+              <i
+                class="fa-regular fa-circle-check"
+                style="
+                  color: #a30000;
+                  background-color: #a30000;
+                  border-radius: 100%;
+                "
+              ></i>
+              <p class="boarder_tittle_text">Blocked</p>
+            </div>
+          </div>
+
+          <div class="addtask_blocked" id="4"></div>
+        </div>
+      </div>
+    </div>
+    <div id="entertask_background" class="entertask_background">
+      <div class="entertask_container">
+        <h1 class="entertask">Enter task</h1>
+        <div class="button_parents_container">
+          <div class="button_container">
+            <input
+              class="entertask_button"
+              id="entertask_button"
+              type="text"
+              placeholder="Task name..."
+            />
+
+            <select name="StatusSelect" id="StatusSelect">
+              <option value="">status</option>
+              <option value="todo">To do</option>
+              <option value="inprogress">In progress</option>
+              <option value="done">Done</option>
+              <option value="blocked">Blocked</option>
+            </select>
+          </div>
+
+          <input class="input_submit" id="input_submit" type="submit" />
+        </div>
+      </div>
+    </div>
+    <!-- 
+    edittask -->
+    <div id="edittask_background" class="entertask_background">
+      <div class="entertask_container">
+        <h1 class="entertask">Edit task</h1>
+        <div class="button_parents_container">
+          <div class="button_container">
+            <input
+              id="edittask_button"
+              type="text"
+              placeholder="Task name..."
+            />
+
+            <select name="StatusSelect" id="editStatusSelect">
+              <option value="">status</option>
+              <option value="todo">To do</option>
+              <option value="inprogress">In progress</option>
+              <option value="done">Done</option>
+              <option value="blocked">Blocked</option>
+            </select>
+          </div>
+
+          <input class="input_submit" id="edit_submit" type="submit" />
+        </div>
+      </div>
+    </div>
+
+    <script src="./todo_app.js"></script>
+  </body>
+</html>
